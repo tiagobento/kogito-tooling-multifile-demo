@@ -10,10 +10,17 @@
     <dmn:informationRequirement id="_28618EA0-623A-405C-A24C-42E43DDE5514">
       <dmn:requiredInput href="#_5A854E59-BD92-48DB-A3DE-0ACEB3756C37"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_6A01BFF3-87B4-472E-8C59-0904384D5659">
+      <dmn:requiredInput href="#_91989912-D452-4460-8007-C3B354551A64"/>
+    </dmn:informationRequirement>
     <dmn:literalExpression id="_4DDD14D4-17AA-4E9C-9DD3-FFDC736379EE">
-      <dmn:text>InputData-1</dmn:text>
+      <dmn:text>InputData-1 + InputData-2</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
+  <dmn:inputData id="_91989912-D452-4460-8007-C3B354551A64" name="InputData-2">
+    <dmn:extensionElements/>
+    <dmn:variable id="_328C5C1E-90AE-4B4F-9DF5-6DDE8905F441" name="InputData-2"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_1DDAA0FE-412B-4A8B-9C89-EC0E7B8BF8B5" name="DRG">
       <di:extension>
@@ -41,9 +48,22 @@
         <dc:Bounds x="356" y="80" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_91989912-D452-4460-8007-C3B354551A64" dmnElementRef="_91989912-D452-4460-8007-C3B354551A64" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="135" y="188" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_28618EA0-623A-405C-A24C-42E43DDE5514-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_28618EA0-623A-405C-A24C-42E43DDE5514">
         <di:waypoint x="177" y="80"/>
         <di:waypoint x="406" y="130"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_6A01BFF3-87B4-472E-8C59-0904384D5659" dmnElementRef="_6A01BFF3-87B4-472E-8C59-0904384D5659">
+        <di:waypoint x="185" y="213"/>
+        <di:waypoint x="406" y="105"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
